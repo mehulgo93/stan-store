@@ -1,4 +1,7 @@
 // components/Header.tsx
+"use client";
+
+import { UserButton } from "@clerk/nextjs";
 
 export default function Header() {
   return (
@@ -21,6 +24,7 @@ export default function Header() {
         <button className="bg-white text-black font-semibold px-3 py-2 rounded-lg text-sm">
           Sign Up
         </button>
+        <UserButton afterSignOutUrl="/" />
       </div>
     </div>
   );
