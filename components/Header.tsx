@@ -2,6 +2,7 @@
 "use client";
 
 import { UserButton } from "@clerk/nextjs";
+import { useAuth } from "@clerk/nextjs";
 
 export default function Header() {
   return (
